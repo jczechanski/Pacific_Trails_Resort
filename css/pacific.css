@@ -1,0 +1,412 @@
+/* This is the style sheet for the Path of Light Yoga Studio Project */
+
+* {
+    box-sizing: border-box;
+}
+
+header, main, nav, footer, figure, figcaption, aside, section, article {
+    display: block
+}
+
+body {
+    background-color: #B8DBED;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #000033;
+    color: #FFFFFF;
+    height: 120px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 3em;
+}
+
+nav {
+    font-weight: bold;
+    padding: 1.5em;
+    font-size: 120%;
+    float: left;
+    width: 160px;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 3s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+nav a:link {
+    color: #5C7FA9;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #A52A2A;
+}
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 3em;
+    letter-spacing: 0.25em;
+}
+
+h2 {
+    color: #3399CC;
+    text-shadow: 1px 1px #CCCCCC;
+}
+
+h3 {
+    color: #000033;
+}
+
+h1, h2, h3, footer {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+main {
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: block;
+    background: #FFFFFF;
+    margin-left: 190px;
+}
+
+main ul {
+    list-style-image: url("../img/marker.gif");
+}
+
+dt {
+    color: #000033;
+}
+
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+    margin-left: 190px;
+    float: none;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 1em;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    margin-left: 130px;
+}
+
+.resort {
+    color: #5C7FA3;
+    font-weight: bold;
+}
+
+/*.container {*/
+/*    border: 5px solid mediumpurple;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+.flexstore {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.storeitem {
+    border: 1px dashed lightgrey;
+    margin: 5px auto;
+    height: 200px;
+    width: 165px;
+    font-size: 0.9em;
+}
+
+#contact {
+    font-size: 90%;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #90C7E3;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 3px 3px 3px #333333;
+    border-width: 1px;
+    border-color: #000033;
+    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    background-repeat: no-repeat;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url("../img/coast2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url("../img/yurt.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url("../img/trail.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+#privacyhero {
+    height: 300px;
+    background-image: url("http://jhay.info/privacy-policy.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 190px;
+}
+
+#mobile {
+    display: none;
+  }
+
+#desktop {
+    display: inline;
+}
+
+table, td, th {
+    border: 2px solid #3399CC
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.5em;
+}
+
+td {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #F5FAFC;
+}
+
+video, embed {
+    float: right;
+    padding-left: 20px;
+}
+
+#gallery {
+    position: relative;
+    height: 200px;
+    text-align: left;
+    color: #000;
+}
+
+#gallery ul {
+    list-style-type: none;
+    width: 300px;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery img {
+    border-style: none;
+}
+
+#gallery a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    text-align: center;
+    opacity: 1;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 64em) {
+
+    body {
+        margin: 0;
+        background-color: #FFFFFF;
+    }
+
+    header {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0;
+        height: auto;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    nav li {
+        display: inline;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
+
+    h1 {
+        letter-spacing: 0.1em;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+
+    video, embed {
+        float: none;
+    }
+
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+        border: none;
+    }
+
+    #homehero, #yurthero, #trailhero {
+        margin: 0;
+        height: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 37.5em) {
+
+    main {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 90%;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+        border: 2px solid #330000;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    label {
+        float: none;
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        margin-left: 0;
+    }
+
+    video, embed {
+        display: none;
+    }
+
+    #mobileVid {
+        background-image: url("../img/pacifictrailsresort.jpg");
+        height: 360px;
+        width: 470px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    #homehero, #yurthero, #trailhero {
+        background-image: none;
+        height: 0;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    figure {
+        display: none;
+    }
+
+    #gallery {
+        display: none;
+    }
+
+}
